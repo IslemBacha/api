@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrvsm3c5095u4OuaDFyT6cXSEHqXcyos5IA&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150vh;
+  
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .aa{
+    display: flex;
+    justify-content: center;
+    border-radius: 59px;
+    border-style: solid;
+    width: 500px;
+    margin-left: 435px;
+    margin-top: 28px;
   }
-  to {
-    transform: rotate(360deg);
+  .zz{
+    display: flex;
+    justify-content: center;
+    margin-top: 239px;
+
   }
+  .ee{
+    margin-left: 529px;
+    margin-top: 177px;
+    flex-direction: column;
+    
+  }
+  .rr{
+    display: flex;
+    justify-content: center;
+  }
+.islem{
+  margin-left: 76px;
+}   
+  
+
+.mm{
+  margin-left: 92px;
 }
+.dd{
+  margin-left: 92px;
+}
+

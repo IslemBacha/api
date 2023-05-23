@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CardUser from './Components/CardUser';
+import ListUsers from './Components/ListUsers';
+import NavUser from './Components/NavUser';
+import Home from './Components/Home';
+import DescUser from './Components/DescUser';
+import { useState } from 'react';
+import PrivateRoute from './Components/PrivateRoute';
+
 
 function App() {
+  const [auth,setAuth]=useState(false)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavUser auth={auth} setAuth={setAuth}/>
+      <Routes>
+        <Route path='/'element={<Home/>}/>
+        <Route path='/listusers' element={<PrivateRoute auth={auth}><ListUsers/></PrivateRoute>}/>
+        <Route path='/descuser/:id' element={<PrivateRoute auth={auth}><DescUser/></PrivateRoute>}/>
+      </Routes>
+
     </div>
   );
 }
